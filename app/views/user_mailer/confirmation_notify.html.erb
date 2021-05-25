@@ -1,0 +1,4 @@
+Hello <%= @user.name || @user.email %>
+Please confirm you email address. After confirming email address you will log in into application.
+<%= link_to "Click Here", confirm_registrations_url(token: @user.confirmation_token) %>
+
